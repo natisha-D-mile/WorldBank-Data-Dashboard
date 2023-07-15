@@ -5,13 +5,7 @@
 //             style="height: 35px; border: 2px dashed green; outline: 0"
 //           >
 let countriescode = `
-            <!-- <option value="ETH">Ethiopia</option>
-            <option value="KEN">Kenya</option>
-            <option value="US">United States</option>
-            <option value="AUS">Australia</option>
-            <option value="SYR">Syria</option>
-            <option value="ALB">Albania</option>
-            <option value="SRB">Serbia</option> -->
+            <option value="selected">Select Country of Interest</option>
             <option value="AF">Afghanistan</option>
             <option value="AL">Albania</option>
             <option value="DZ">Algeria</option>
@@ -229,14 +223,13 @@ let countriescode = `
             <option value="YE">Yemen, Rep.</option>
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabwe</option>
-         `; 
+         `;
 
-let select_country_display = document.getElementById('selectCountryPopn');
-select_country_display.innerHTML = countriescode
+let select_country_display = document.getElementById("selectCountryPopn");
+select_country_display.innerHTML = countriescode;
 
-let select_country_compare1 = document.getElementById('country-1');
+let select_country_compare1 = document.getElementById("country-1");
 select_country_compare1.innerHTML = countriescode;
 
-let select_country_compare2 = document.getElementById('country-2');
+let select_country_compare2 = document.getElementById("country-2");
 select_country_compare2.innerHTML = countriescode;
-

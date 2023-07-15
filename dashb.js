@@ -116,26 +116,26 @@ document.getElementById('compareBtn').addEventListener('click', function(){
 
 function drawCompareChart(population1, population2, c1, c2) {
   // Data retrieved https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature
-  Highcharts.chart('container-compare', {
+  Highcharts.chart("container-compare", {
     chart: {
-      type: 'bar',
+      type: "bar",
       // backgroundColor: '#282626',
     },
     title: {
-      text: 'Monthly Average Temperature',
+      text: "Visualizing Population Dynamics",
     },
     subtitle: {
       text:
-        'Source: ' +
-        '<a href="https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature" ' +
-        'target="_blank">Wikipedia.com</a>',
+        "Source: " +
+        '<a href="https://www.worldbank.org/en/home" ' +
+        'target="_blank">World Bank</a>',
     },
     xAxis: {
       categories: [2022, 2021, 2020, 2019, 2018, 2017],
     },
     yAxis: {
       title: {
-        text: 'Population',
+        text: "Population",
       },
     },
     plotOptions: {
@@ -180,17 +180,17 @@ fetch(
 
 // Create the chart
 function drawChart3(x,y){
-  Highcharts.chart('containerGdp', {
+  Highcharts.chart("containerGdp", {
     chart: {
-      type: 'column',
+      type: "column",
     },
     title: {
-      align: 'left',
-      text: 'Browser market shares. January, 2022',
+      align: "left",
+      text: "Gross Domestic Product (GDP) Growth in Ethiopia After the Reformed Government Took Power [2018-2022]",
     },
     subtitle: {
-      align: 'left',
-      text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>',
+      align: "left",
+      text: 'Click the columns to view versions. Source: <a href="https://www.worldbank.org/en/home">The World Bank</a>',
     },
     accessibility: {
       announceNewData: {
@@ -198,13 +198,12 @@ function drawChart3(x,y){
       },
     },
     xAxis: {
-      type: 'category',
+      type: "category",
       categories: y,
     },
     yAxis: {
-      
       title: {
-        text: 'Total percent market share',
+        text: "Total percent market share",
       },
     },
     legend: {
@@ -215,7 +214,7 @@ function drawChart3(x,y){
         borderWidth: 0,
         dataLabels: {
           enabled: true,
-          format: '',
+          format: "",
         },
       },
     },
@@ -228,7 +227,7 @@ function drawChart3(x,y){
 
     series: [
       {
-        name: 'GDP',
+        name: "GDP",
         colorByPoint: true,
         data: x,
       },
